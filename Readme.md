@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Влад Влад](https://up.htmlacademy.ru/htmlcss-individual/2/user/254709).
-* Наставник: `Неизвестно`.
+* Студент: [Владислав Кенжибаев](https://up.htmlacademy.ru/htmlcss-individual/2/user/254709).
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
 ---
 
