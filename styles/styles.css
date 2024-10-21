@@ -41,7 +41,8 @@ a {
   cursor: pointer;
 }
 
-ul, p {
+ul,
+p {
   padding: 0;
   margin: 0;
 }
@@ -239,6 +240,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   width: 140px;
+  margin-left: auto;
 }
 
 .subscribe-button {
@@ -931,13 +933,17 @@ img {
 /* Карточки отелей */
 .catalog-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   padding: 0;
   margin: 0 0 80px;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .catalog-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
   width: 300px;
   padding: 20px;
   margin: 0;
@@ -945,8 +951,17 @@ img {
   box-shadow: 0 0 0 1px #e6e6e6;
 }
 
+.catalog-item-link:nth-child(1) {
+  grid-column: 1 / -1;
+}
+
+.catalog-item-link:nth-child(2) {
+  grid-column: 1 / -1;
+}
+
 .catalog-item-image {
-  margin-bottom: 16px;
+  display: block;
+  margin: 0;
 }
 
 .catalog-item-title {
@@ -955,7 +970,7 @@ img {
   font-weight: 700;
   line-height: 28px;
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0;
 }
 
 .catalog-item-link {
@@ -970,7 +985,7 @@ img {
   display: inline-block;
   color: #333333;
   width: 140px;
-  margin: 0 0 16px 0;
+  margin: 0;
 }
 
 .catalog-price {
@@ -978,18 +993,7 @@ img {
   color: #333333;
   text-align: right;
   width: 140px;
-  margin: 0 0 16px;
-}
-
-.catalog-button-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.catalog-rating-container {
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
 }
 
 .catalog-rating {
@@ -1007,7 +1011,7 @@ img {
   border-radius: 4px;
   background: #f2f2f2;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 auto;
 }
 
 .catalog-stars {
@@ -1053,7 +1057,7 @@ img {
 }
 
 .pagination-item {
-margin-right: 8px;
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -1097,11 +1101,11 @@ margin-right: 8px;
 
 .pagination-text {
   color: #000000;
-font-family: PT Sans;
-font-size: 22px;
-font-weight: 400;
-line-height: 26px;
-text-align: center;
+  font-family: PT Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
   background: #ffffff;
   display: flex;
   width: 60px;
@@ -1113,7 +1117,7 @@ text-align: center;
 /* Подписка на рассылку на побочных */
 
 .subscribe-inner {
-padding: 96px 258px 104px 258px;
+  padding: 96px 258px 104px 258px;
   text-align: center;
 }
 
@@ -1131,20 +1135,4 @@ padding: 96px 258px 104px 258px;
   line-height: 26px;
   width: 475px;
   margin: 0 auto 54px;
-}
-
-.flex-tets {
-  display: flex;
-  width: 1000px;
-  margin: 0 auto;
-}
-.flex-tets-1 {
-  box-sizing: border-box;
-  flex-grow: 1;
-  background-color: green;
-}
-.flex-tets-2 {
-  flex-grow: 2;
-  background-color: red;
-
 }
