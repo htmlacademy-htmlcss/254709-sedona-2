@@ -8,7 +8,6 @@
     <link rel="icon" href="/images/favicon.png">
   </head>
   <body>
-    <div class="wrapper">
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -46,12 +45,12 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html" aria-current="page">
+            <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Гостиницы</a>
+            <p class="breadcrumbs-link">Гостиницы</з>
           </li>
         </ol>
         <section class="filters" data-test="filter">
@@ -125,17 +124,17 @@
         </select>
         <ul class="view-buttons">
           <li class="view-buttons-item view-buttons-item-current">
-            <a class="view-buttons-tile" href="#">
+            <a class="view-buttons-tile" href="catalog.html?view=tile">
               <span class="visually-hidden">Показать плиткой</span>
             </a>
           </li>
           <li class="view-buttons-item">
-            <a class="view-buttons-card" href="#">
+            <a class="view-buttons-card" href="catalog.html?view=card">
               <span class="visually-hidden">Показать карточками</span>
             </a>
           </li>
           <li class="view-buttons-item">
-            <a class="view-buttons-list" href="#">
+            <a class="view-buttons-list" href="catalog.html?view=list">
               <span class="visually-hidden">Показать списком</span>
             </a>
           </li>
@@ -251,35 +250,35 @@
         <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="user-email">Ввод e-mail</label>
-          <input class="subscribe-email" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail">
+          <input class="subscribe-email" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button button-additional" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer" data-test="footer">
       <ul class="social">
-        <a class="social-link" href="https://vk.com/htmlacademy">
         <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
+          </a>
           </li>
         </a>
-        <a class="social-link" href="https://t.me/htmlacademy">
         <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegram</span>
-          </li>
-        </a>
-        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          </a>
+        </li>
         <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="author-logo" href=" https://htmlacademy.ru/">
-        <img class="author-logo-image" src="images/author-logo.svg" width="115" height="33"
-          alt="Логотип HTML-Академии">
+      <a class="author-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="author-logo-image" src="images/author-logo.svg" width="115" height="33" alt="Логотип HTML-Академии">
       </a>
+
     </footer>
-    </div>
   </body>
 </html>
