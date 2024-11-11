@@ -112,6 +112,7 @@
                 <p class="features-description">Не только китайского, <br>но и настоящего местного производства!</p>
             </li>
           </ul>
+
         </section>
         <section class="search-hotels" data-test="search">
           <p class="search-hotels-title">Заинтересовались?</p>
@@ -155,4 +156,49 @@
       </footer>
     </div>
     </body>
+    <section class="modal">
+      <div class="modal-window">
+        <div class="modal-window-head">
+          <span class="modal-window-title">Поиск гостиницы в Седоне</span>
+          <button class="modal-window-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-date">
+            <label class="modal-label" for="check-in-date">Дата заезда:</label>
+            <input class="modal-input input" id="check-in-date" type="text" name="check-in-date" value="1 сентября 2023" required>
+            <span class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-date">
+            <label class="modal-label" for="check-out-date">Дата выезда:</label>
+            <input class="modal-input input" id="check-out-date" type="text" name="check-out-date" value="1 сентября 2023" required>
+           <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="modal-quantity">
+            <div class="modal-quantity-wrapper">
+              <label class="modal-label" for="adults">Взрослые:</label>
+              <div class="modal-encounter">
+                <button class="modal-button modal-button-minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                <input class="modal-input-number input" id="adults" type="number" name="adults-quantity" value="2" required>
+                <button class="modal-button modal-button-plus" type="button"><span class="visually-hidden">Увеличить</span></button>
+              </div>
+            </div>
+            <div class="modal-quantity-wrapper">
+              <label class="modal-label" for="children">Дети:</label>
+              <div class="modal-tooltip">
+                <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <span class="visually-hidden">Показать дополнительную информацию</span>
+                </button>
+                <div class="modal-tooltip-subscribe">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+              </div>
+              <div class="modal-encounter">
+                <button class="modal-button modal-button-minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                <input class="modal-input-number input" id="children" type="number" name="children-quantity" value="2" required>
+                <button class="modal-button modal-button-plus" type="button"><span class="visually-hidden">Увеличить</span></button>
+              </div>
+            </div>
+          </div>
+          <button class="button button-additional modal-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </section>
 </html>

@@ -54,7 +54,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <p class="breadcrumbs-link">Гостиницы</p>
+              <span class="breadcrumbs-link">Гостиницы</span>
             </li>
           </ol>
           <div class="filters" data-test="filter">
@@ -64,20 +64,20 @@
                 <ul class="filters-list">
                   <li class="filters-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                      <span class="control-input-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filters-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-input-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filters-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wifi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="wifi">
+                      <span class="control-input-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -87,30 +87,42 @@
                 <ul class="filters-list">
                   <li class="filters-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="hotel" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="house-type" value="hotel" checked>
+                      <span class="control-input-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filters-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="motel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="house-type" value="motel">
+                      <span class="control-input-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filters-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="apartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="house-type" value="apartments">
+                      <span class="control-input-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="filters-group filters-group-price">
                 <legend class="filters-title">Стоимость, ₽:</legend>
-                <label class="filter-price-range"><input class="filter-price-input filter-price-input-from" type="text"
-                    name="min-price" value="0"></label>
-                <label class="filter-price-range"><input class="filter-price-input filter-price-input-to" type="text"
-                    name="max-price" value="9000"></label>
+                <div class="range-input">
+                  <label class="filter-price-range">
+                    <input class="filter-price-input filter-price-input-from input" type="number" name="min-price" value="0">
+                    <span class="filter-price-text">от</span>
+                  </label>
+                  <label class="filter-price-range">
+                    <input class="filter-price-input filter-price-input-to input" type="number" name="max-price" value="9000">
+                    <span class="filter-price-text">до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="right: 62px; width: 226px;">
+                    <button class="range-toggle range-toggle-min" type="button"></button>
+                    <button class="range-toggle range-toggle-max" type="button"></button>
+                  </div>
+                </div>
               </fieldset>
               <div class="filters-group-buttons">
                 <button class="button button-additional submit-button" type="submit">Применить</button>
@@ -122,24 +134,25 @@
         <section class="catalog content-container" data-test="catalog">
           <div class="catalog-head-container">
             <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-            <select class="catalog-sorting">
+            <label for="sorting" class="visually-hidden">Сортировка</label>
+            <select class="catalog-sorting" id="sorting">
               <option value="cheap" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="view-buttons">
               <li class="view-buttons-item view-buttons-item-current">
-                <a class="view-buttons-tile" href="catalog.html?view=tile">
+                <a class="view-buttons-link view-buttons-tile" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плиткой</span>
                 </a>
               </li>
               <li class="view-buttons-item">
-                <a class="view-buttons-card" href="catalog.html?view=card">
+                <a class="view-buttons-link view-buttons-card" href="catalog.html?view=card">
                   <span class="visually-hidden">Показать карточками</span>
                 </a>
               </li>
               <li class="view-buttons-item">
-                <a class="view-buttons-list" href="catalog.html?view=list">
+                <a class="view-buttons-link view-buttons-list" href="catalog.html?view=list">
                   <span class="visually-hidden">Показать списком</span>
                 </a>
               </li>
@@ -241,7 +254,7 @@
           <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Ввод e-mail</label>
-            <input class="subscribe-email" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail"
+            <input class="subscribe-email input" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail"
               required>
             <button class="button button-additional subscribe-button" type="submit">Подписаться</button>
           </form>
