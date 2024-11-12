@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Влад Влад](https://up.htmlacademy.ru/htmlcss-individual/2/user/254709).
-* Наставник: `Неизвестно`.
-
+* Студент: [Владислав Кенжибаев](https://up.htmlacademy.ru/htmlcss-individual/2/user/254709).
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
+* Сайт: [Мой проект "Седона"](https://generalofgotei.github.io/254709-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
