@@ -64,6 +64,7 @@ input[type="number"]::-webkit-inner-spin-button {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .content-container {
@@ -1467,7 +1468,6 @@ opacity: 0.6;
   min-width: 400px;
   border-radius: 4px;
   font-weight: 700;
-  align-self: stretch;
 }
 
 .modal-date::after {
