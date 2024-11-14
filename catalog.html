@@ -57,9 +57,8 @@
               <span class="breadcrumbs-link">Гостиницы</span>
             </li>
           </ol>
-          <div class="filters" data-test="filter">
             <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filters-group">
+              <fieldset class="filters-group filters-group-checkbox">
                 <legend class="filters-title">Инфраструктура:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
@@ -83,7 +82,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filters-group">
-                <legend class="filters-title">Тип Жилья:</legend>
+                <legend class="filters-title filters-group-checkbox">Тип Жилья:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
                     <label class="control">
@@ -129,7 +128,6 @@
                 <button class="button button-transparent reset-button" type="reset">Сбросить</button>
               </div>
             </form>
-          </div>
         </section>
         <section class="catalog content-container" data-test="catalog">
           <div class="catalog-head-container">
@@ -141,8 +139,8 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="view-buttons">
-              <li class="view-buttons-item view-buttons-item-current">
-                <a class="view-buttons-link view-buttons-tile" href="catalog.html?view=tile">
+              <li class="view-buttons-item">
+                <a class="view-buttons-link view-buttons-tile view-buttons-link-current" href="catalog.html?view=tile" aria-current="page">
                   <span class="visually-hidden">Показать плиткой</span>
                 </a>
               </li>
@@ -163,10 +161,9 @@
               <a class="catalog-item-link" href="#">
                 <img class="catalog-item-image" src="images/catalog/hotel-1.jpg" width="300" height="212"
                   alt="Amara Resort & Spa">
-              </a>
-              <a class="catalog-item-link" href="#">
-                <p class="catalog-item-title">Amara Resort & Spa</p>
-              </a>
+              <p class="catalog-item-title">
+                <a class="catalog-item-link" href="#">Amara Resort & Spa</a>
+              </p>
               <p class="catalog-type">Гостиница</p>
               <p class="catalog-price">От 4000 ₽</p>
               <a class="button button-main catalog-button" href="#">Подробнее</a>
@@ -181,9 +178,9 @@
                 <img class="catalog-item-image" src="images/catalog/hotel-2.jpg" width="300" height="212"
                   alt="Villas at Poco Diablo">
               </a>
-              <a class="catalog-item-link" href="#">
-                <p class="catalog-item-title">Villas at Poco Diablo</p>
-              </a>
+              <p class="catalog-item-title">
+                <a class="catalog-item-link" href="#">Villas at Poco Diablo</a>
+              </p>
               <p class="catalog-type">Гостиница</p>
               <p class="catalog-price">От 5000 ₽</p>
               <a class="button button-main catalog-button" href="#">Подробнее</a>
@@ -198,9 +195,9 @@
                 <img class="catalog-item-image" src="images/catalog/hotel-3.jpg" width="300" height="212"
                   alt="Desert Quail Inn">
               </a>
-              <a class="catalog-item-link" href="#">
-                <p class="catalog-item-title">Desert Quail Inn</p>
-              </a>
+              <p class="catalog-item-title">
+                <a class="catalog-item-link" href="#">Desert Quail Inn</a>
+              </p>
               <p class="catalog-type">Гостиница</p>
               <p class="catalog-price">От 2500 ₽</p>
               <a class="button button-main catalog-button" href="#">Подробнее</a>
@@ -215,9 +212,9 @@
                 <img class="catalog-item-image" src="images/catalog/hotel-4.jpg" width="300" height="212"
                   alt="GreenTree Inn">
               </a>
-              <a class="catalog-item-link" href="#">
-                <p class="catalog-item-title">GreenTree Inn</p>
-              </a>
+              <p class="catalog-item-title">
+                <a class="catalog-item-link" href="#">GreenTree Inn</a>
+              </p>
               <p class="catalog-type">Гостиница</p>
               <p class="catalog-price">От 1500 ₽</p>
               <a class="button button-main catalog-button" href="#">Подробнее</a>
@@ -230,7 +227,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current" href="#">1</a>
+              <a class="pagination-link pagination-current" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -249,13 +246,12 @@
             </li>
           </ul>
         </section>
-        <section class="subscribe-inner" data-test="subscribe">
-          <p class="subscribe-inner-title">Подпишитесь на рассылку</p>
-          <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscribe" data-test="subscribe">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Ввод e-mail</label>
-            <input class="subscribe-email input" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail"
-              required>
+            <input class="subscribe-email input" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="button button-additional subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>

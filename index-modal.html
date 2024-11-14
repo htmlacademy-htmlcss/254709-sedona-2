@@ -100,30 +100,26 @@
                 <p class="features-title">Жильё</p>
                 <p class="features-description">Рекомендуем пожить<br> в настоящем мотеле, <br>всё как в кино!</p>
             </li>
-
             <li class="features-item features-item-food">
                 <p class="features-title">Еда</p>
                 <p class="features-description">Всегда заказывайте <br>топовый фирменный бургер,<br> вы не
                   разочаруетесь!</p>
             </li>
-
             <li class="features-item features-item-gift">
                 <p class="features-title">Сувениры</p>
                 <p class="features-description">Не только китайского, <br>но и настоящего местного производства!</p>
             </li>
           </ul>
-
         </section>
         <section class="search-hotels" data-test="search">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="search-hotels-title">Заинтересовались?</p>
-          <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
-            предложения
-            гостиниц в Седоне</p>
-          <button class="button button-main search-hotels-button">Поиск гостиницы в Седоне</button>
+          <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button button-main search-hotels-button" href="index-modal.html">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscribe" data-test="subscribe">
-          <p class="subscribe-title">Подпишитесь на рассылку</p>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscribe subscribe-bg" data-test="subscribe">
+          <h2 class="subscribe-title subscribe-color">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description subscribe-color">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Ввод e-mail</label>
             <input class="subscribe-email input" id="user-email" type="email" name="user-email" placeholder="Ваш e-mail" required>
@@ -156,10 +152,11 @@
       </footer>
     </div>
     <section class="modal">
+      <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
       <div class="modal-window">
         <div class="modal-window-head">
           <span class="modal-window-title">Поиск гостиницы в Седоне</span>
-          <button class="modal-window-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <a class="modal-window-close-button" href="index.html"><span class="visually-hidden">Закрыть</span></a>
         </div>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-date">
@@ -196,10 +193,9 @@
               </div>
             </div>
           </div>
-          <button class="button button-additional modal-button" type="submit">Найти</button>
+          <button class="button button-additional modal-button-submit" type="submit">Найти</button>
         </form>
       </div>
     </section>
     </body>
-
 </html>
