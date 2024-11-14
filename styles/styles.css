@@ -1384,7 +1384,7 @@ opacity: 0.6;
 }
 
 .modal-window {
-  min-width: 577px;
+  width: 577px;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -1403,6 +1403,7 @@ opacity: 0.6;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  max-width: 500px;
   margin-bottom: 64px;
 }
 
@@ -1455,6 +1456,7 @@ opacity: 0.6;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  max-width: 120px;
   text-transform: capitalize;
 }
 
@@ -1462,6 +1464,7 @@ opacity: 0.6;
   min-width: 400px;
   border-radius: 4px;
   font-weight: 700;
+  align-self: stretch;
 }
 
 .modal-date::after {
