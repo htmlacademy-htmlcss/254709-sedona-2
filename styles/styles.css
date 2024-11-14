@@ -46,6 +46,10 @@ img {
   overflow: hidden;
 }
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
@@ -1392,7 +1396,6 @@ opacity: 0.6;
 }
 
 .modal-window-head {
-  margin-bottom: 64px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1514,11 +1517,11 @@ opacity: 0.6;
 }
 
 .modal-input-number {
-  max-width: 111px;
+  max-width: 31px;
   max-height: 48px;
   text-align: center;
   font-weight: 700;
-  padding: 12px 10px;
+  padding: 12px 40px;
   border-radius: 4px;
 }
 
@@ -1616,6 +1619,10 @@ opacity: 0.6;
 .modal-button-minus:focus-visible:before {
   outline: 3px solid #82b3d3;
   outline-offset: 3px;
+}
+
+.modal-input-number {
+  -moz-appearance: textfield;
 }
 
 .modal-button-submit {
